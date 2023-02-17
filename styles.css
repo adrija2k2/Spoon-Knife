@@ -1,17 +1,28 @@
-* {
-  margin:0px;
-  padding:0px;
-}
+/* Reset default margin and padding values for all elements */
 
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Style for the octocat image */
 #octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+display: block;
+max-width: 100%;
+margin: 50px auto;
 }
 
+/* Style for the paragraph text */
 p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+max-width: 600px;
+margin: 50px auto;
+font-family: Arial, sans-serif;
+font-size: 24px;
+line-height: 1.5;
+text-align: center;
 }
+
+In this modified code, I changed the universal selector to include box-sizing: border-box, which will ensure that padding and border values are included in the element's total width and height. For the #octocat selector, I changed the width property to max-width to ensure the image is responsive and won't overflow its container. I also changed the font-family for the p selector to Arial and adjusted the font-size and line-height for better readability. Finally, I added a text-align property to center the paragraph text.
+
+
+
